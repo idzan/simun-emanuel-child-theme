@@ -506,8 +506,6 @@ marquee > a {
     margin-top: 18vh !important;
 } */
 
-
-
 .pt-cv-content {
     font-weight: 600!important;
     color: #000!important;
@@ -715,4 +713,28 @@ figure.woocommerce-product-gallery__wrapper {
     .slide-text {
         margin-top: 12.5% !important;
     }
+}
+/* New Tweaks */
+.header_cart_wrapper {
+    display: inline-block !important;
+    margin-left: 20px !important;
+    margin-top: 16px !important;
+    position: relative !important;
+}
+#page_content_wrapper, .page_content_wrapper {
+    width: 1350px !important;
+}
+.above_top_bar .top_contact_info {
+    width: 40% !important;
+}
+.above_top_bar .header_cart_wrapper {
+    width: auto !important;
+    margin-right: 25px !important;
+}
+.above_top_bar .social_wrapper {
+    width: 11.5% !important;
+}
+.above_top_bar .loginregister {
+    width: auto;
+    float: right;
 }
