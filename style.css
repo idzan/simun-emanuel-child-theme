@@ -725,7 +725,7 @@ figure.woocommerce-product-gallery__wrapper {
     width: 1350px !important;
 }
 .above_top_bar .top_contact_info {
-    width: 50% !important;
+    width: 40% !important;
 }
 .above_top_bar .header_cart_wrapper {
     width: auto !important;
@@ -735,7 +735,7 @@ figure.woocommerce-product-gallery__wrapper {
     width: 11.5% !important;
 }
 .above_top_bar .loginregister {
-    width: auto;
+    width: 10%;
     float: right;
     line-height: 51px !important;
     padding-left: 10px;
