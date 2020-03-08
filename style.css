@@ -1,0 +1,742 @@
+/* 
+Theme Name: Šimun Emanuel Putovanja
+Theme URI: https://github.com/idzan/
+Description: Child theme for Altair theme from ThemeGoods customized for Šimun Emanuel Putovanja Ltd.
+Author: Marko Idzan ft. HR Web.D & ThemeGoods
+Author URI: https://idzan.eu/
+Version: 1.0
+Text Domain: altair
+Template: altair
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: gray, white, responsive-layout, custom-header, custom-background, threaded-comments, translation-ready, editor-style, custom-menu
+*/
+
+/*Font Import*/
+/*@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap&subset=latin-ext');*/
+
+/*Text alignement*/
+.naslov-center {
+    text-align:center;
+    color:#0872A0;
+}
+.podnaslov-center {
+    text-align:center;
+    color:#1e1e1e;
+}
+
+.tour_meta_wrapper {
+    display: none;
+}
+
+.state-fb-pop-up {
+    left: 40%!important;
+    bottom: 50%!important;
+}
+
+.postid-5224 #wrapper #page_caption > div.page_title_wrapper.fadeIn > h1 {
+    text-shadow: 2px 2px 1px #333;
+}
+
+#tour_search_btn {
+    border-radius: 0px!important;
+    color: #FFF;
+    margin-top: 25px!important;
+    border: 2px solid #3E589E;
+    background-color:#3E589E!important;
+    font-size: 14px;
+    line-height: 1;
+    padding: 14px 25px!important;
+    font-weight: 400;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#tour_search_btn:hover {
+    border: 2px solid #A96294!important;
+    background-color:#A96294!important;
+    color: #058084 !important;
+    font-weight: 400;
+    color:#FFF;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.top_bar.hasbg {
+    border-bottom: 0!important;
+}
+.page_caption_desc {
+    color: #4e589e!important;
+}
+#page_content_wrapper > div > div > div > div.one_third > ul > li > strong {
+    font-size: 18px;
+    position: absolute;
+    left: -20px;
+    top: -3px;
+}
+#page_caption > div.page_title_wrapper.fadeIn > h1 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+}
+.postid-3329 #wrapper #page_caption > div.page_title_wrapper.fadeIn > h1 {
+    text-transform: uppercase;
+    font-weight: 400;
+    text-shadow: 2px 2px 1px rgba(51,51,51,0.8);
+    margin-top: 180px;
+    font-style: italic;
+}
+/*gravity forma*/
+label.gfield_label, .validation_error {
+    display: none!important;
+}
+#input_1_1, #input_1_2, #input_1_3, #input_1_4, #input_1_5 {
+    border: 0;
+    border-bottom: 1px solid #bbb;
+    font-size: 14px;
+background-color: rgba(255,255,255,0.5);
+    margin-bottom: 20px;
+padding: 10px 5px;
+}
+#input_1_1:focus, #input_1_2:focus, #input_1_3:focus, #input_1_4:focus, #input_1_5:focus {
+    border: 1px solid #FF8700;
+    background-color: #FFF;
+    color: #333;
+}
+::-webkit-input-placeholder {
+   color: #333;
+}
+:-moz-placeholder {
+   color: #333;
+}
+:-ms-input-placeholder {
+   color: #333;
+}
+.gform_footer.top_label {
+    padding-top: 0!important;
+    margin-top: 0!important;
+}
+#gform_submit_button_1 {
+    border-radius: 0;
+    background-color: #FFFFFF;
+    color: #CC181E;
+    font-weight: 600;
+    font-size: 14px;
+    border: 2px solid #CC181E;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#gform_submit_button_1:hover {
+    border: 2px solid #FFFFFF!important;
+    color: #FFFFFF!important;
+    background-color: #CC181E!important;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.widgettitle {
+    font-size: 18px;
+    line-height: 22px;
+}
+#text-3 > div > ul > li {
+    line-height: 20px;
+    font-size: 14px;
+}
+.widget div #menu-menu-1 li {
+    font-size: 14px;
+    line-height: 20px;
+}
+#text-2 > div > a > img {
+    max-width: 150px;
+}
+
+#text-2 > div > p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #FF1A1A;
+    text-shadow: none!important;
+    font-style: italic!important;
+    font-family: cursive;
+}
+.social_share_wrapper > ul > li:nth-child(3) {
+    display: none;
+}
+#footer {
+    background-color: transparent!important;
+}
+#footer .sidebar_widget li h2.widgettitle {
+    color: #FFF;
+}
+#page_caption.hasbg.fullscreen h1 {
+    font-size: 40px;
+}
+#footer .widget_tag_cloud div a {
+    border-color: #FFF!important;
+    color:#FFF!important;
+}
+#footer .widget_tag_cloud div a:hover {
+    color: #FF8800!important;
+}
+.social_wrapper.shortcode ul{
+    margin-left:20px!important;
+}
+a.fancy-gallery {
+    margin: 5px;
+}
+.wu-copyright {
+    display: none;
+}
+.wu-forecast-wrapper .wu-day-title {
+    color: #FFF;
+}
+.pt-cv-wrapper .btn-success {
+    display:none!important;
+    color: #ffffff;
+    background-color: #C31E11;
+    border-color: #C31E11;
+    border-radius: 0;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: rgba(255,255,255,0);
+}
+#gform_submit_button_2 {
+    font-size: 18px;
+    line-height: 18px;
+    padding: 10px 25px!important;
+    border-radius: 30px;
+    background-color: transparent!important;
+    color: #E90E01!important;
+    text-shadow: 1px 1px 1px #FFFF01!important;
+    font-weight: 600;
+    border-color: #FFF!important;
+}
+#input_2_1 {
+    box-shadow: none;
+    border: 2px solid #F5F4F4;
+    font-size: 14px;
+    padding: 6px 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+.alignleft.size-full.wp-image-4227 {
+    float: left;
+    display: inline-block;
+    position: relative;
+    right: -150px;
+    top: -70px;
+}
+#wrapper > div.ppb_wrapper > div:nth-child(5) > div > div.one_half.last {
+    height: 230px!important;
+}
+#gform_submit_button_2:hover {
+    background-color: #FFF!important;
+    color: #89170e!important;
+    font-weight: 600;
+}
+.p-newsletter {
+    font-size: 26px;
+    line-height: 22px;
+    color: #D70000;
+    text-shadow: 1px 1px 1px #E4DD02;
+    font-family: cursive;
+}
+.newsletter-img-2 {
+    position: absolute!important;
+    right: 36%!important;
+    top: 270px!important;
+}
+#wrapper > div.ppb_wrapper > div:nth-child(5) > div > div:nth-child(1) {
+    margin-top: -100px;
+}
+.testimonial_slider_meta > h6 {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+}
+.slides > li:nth-child(1) > div {
+    padding-top: 20px;
+}
+.slides > li:nth-child(2) > div {
+    padding-top: 30px;
+}
+.slides > li:nth-child(4) > div {
+    padding-top: 55px;
+}
+#menu_wrapper div .nav li a {
+    font-size: 14px;
+    font-style: italic;
+}
+#wrapper > div.ppb_wrapper > div:nth-child(1) > marquee > a {
+    color: #FFF!important;
+}
+marquee {
+    padding: 5px;
+}
+.logo_wrapper img {
+    max-width: 100px !important;
+}
+@media only screen and (max-width: 767px) {
+.logo_wrapper img {
+width: 90px !important;
+    max-width: 100px!important;
+}
+}
+.top_bar, .top_bar.fixed {
+    background: rgb(216, 212, 212) !important;
+}
+.page-id-3093 #wrapper > div.header_style_wrapper.fixed > div.top_bar.hasbg.fixed {
+    background-color: transparent!important;
+}
+img.war_soundy_audio_control.war_soundy_pp_corner {
+    width: 35px!important;
+    right: 15px!important;
+    top: 90px!important;
+}
+.tp-caption {
+    color: #FFF!important;
+    text-shadow:2px 2px 2px #4580AC!important;
+}
+i.viber:before {
+    content: url(https://simun-emanuel.hr/wp-content/uploads/2015/08/Viber-ver-3-e1440684421600.png);
+    font-size: 14px;
+    width: 20px;
+    position: relative;
+    top: 5px;
+}
+i.whatsup:before {
+    content: url(https://simun-emanuel.hr/wp-content/uploads/2015/08/whatsapp-512-e1440684400275.png);
+    font-size: 14px;
+        width: 18px;
+    position: relative;
+    top: 3px;
+}
+li.facebook {
+    border-color: transparent!important;
+    width: 20px!important;
+    border-radius: 30px;
+    height: 20px!important;
+    padding: 4px 8px 11px;
+    background-color: #3a5795 !important;
+}
+#wrapper > div.ppb_wrapper > div > div > div.one_third > div > ul > li.facebook {
+        border-color: transparent!important;
+    background-color: transparent!important;
+    width: 40px!important;
+    height: 40px!important;
+    padding: 0!important;
+}
+#wrapper > div.ppb_wrapper > div > div > div.one_third > div > ul > li.facebook > a {
+    width: 20px!important;
+    border-radius: 30px;
+
+    height: 20px!important;
+    background-color: #3a5795 !important;
+}
+li.viber {
+    /* width: 35px!important; */
+    padding: 3px 7px 3px;
+    /* height: 30px!important; */
+    border-radius: 30px;
+    background-color: #7f4b95 !important;
+}
+li.whatsup {
+    padding: 3px 7px 2px 9px;
+    border-radius: 30px;
+    background-color: #189D0E !important;
+}
+li.youtube  {
+    padding: 4px 10px 2px;
+    border-radius: 30px;
+    background-color: #CC181E !important;
+}
+li.instagram  {
+    padding: 4px 10px 2px;
+    border-radius: 30px;
+    background-color: #e1306c !important;
+}
+li.flickr {
+    padding: 4px 10px 2px;
+    border-radius: 30px;
+    background-color: #ff0084 !important;
+}
+#wrapper > div.ppb_wrapper > div > div > div.one_third > div > ul > li.youtube a{
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #CC181E!important;
+}
+#wrapper > div.ppb_wrapper > div > div > div.one_third > div > ul > li.youtube {
+        border-color: transparent!important;
+    background-color: transparent!important;
+    width: 40px!important;
+    height: 40px!important;
+    padding: 0!important;
+}
+i.fa.fa-youtube {
+    font-size: 18px!important;
+}
+/* #wrapper > div.ppb_wrapper > div > div > div.one_third > div > ul > li.google {
+        border-color: transparent!important;
+    background-color: transparent!important;
+    width: 40px!important;
+    height: 40px!important;
+    padding: 0!important;
+}
+#wrapper > div.ppb_wrapper > div > div > div.one_third > div > ul > li.google a{
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #CC181E!important;
+}
+li.google {
+    padding: 4px 10px 2px;
+    border-radius: 30px;
+    background-color: #DD4A39!important;
+} */
+li.skype{
+    background-color: #00AFF0!important;
+    padding: 2px 9px;
+    border-radius: 30px;
+}
+.above_top_bar .social_wrapper ul li a {
+    margin: 0!important;
+}
+.above_top_bar .top_contact_info {
+    line-height: 51px!important;
+}
+i.gmail:after {
+    content: url(https://simun-emanuel.hr/wp-content/uploads/2015/09/10-gmail-icon1-e1441659682821.png);
+    width: 30px!important;
+    position: relative;
+    top: 10px;
+    margin-right: 0!important;
+    padding: 2px!important;
+}
+.page-id-3270 #wrapper #page_content_wrapper > div > div > div > div.one_third > div > ul > li {
+    padding: 0;
+    width: auto!important;
+    height: auto!important;
+    border-radius: 5px;
+}
+.page-id-3270 #wrapper #page_content_wrapper > div > div > div > div.one_third > div > ul > li.facebook {
+    padding: 0 3px!important;
+}
+#wrapper > div.header_style_wrapper > div.above_top_bar > div > div.top_contact_info > span:nth-child(1) > a > i:before {
+    content: url(https://simun-emanuel.hr/wp-content/uploads/2015/08/phone-icon-e1441654283438.png);
+    width: 30px;
+    position: relative;
+    top: 7px;
+}
+.footer_bar {
+    background-color: transparent!important;
+    background-image: url(https://simun-emanuel.hr/wp-content/uploads/2015/09/12495-oak-on-dandelion-field-1920x1080-nature-wallpaper-e1441659242648.jpg)!important;
+    background-position: -130px 0;
+    background-size: 110vw 100%;
+}
+#footer {
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px #000000;
+}
+.footer_bar_wrapper {
+    background-color: rgba(0,0,0,0.5);
+    margin-bottom: 10px;
+}
+li#awesomeweatherwidget-2 > div > div {
+    text-shadow: 1px 1px 1px #333;
+}
+
+.novosti-wrapper {
+    background-color: rgba(255,255,255,0.5);
+    padding: 20px 50px 0px!important;
+max-height: 800px;
+    overflow-y: scroll;
+}
+.page-id-3093 #wrapper > div.ppb_wrapper > div:nth-child(1) {
+    background-position: center;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    z-index: 2;
+    color: #ffffff;
+    background-color: #C31E11!important;
+    border-color: #428bca;
+    cursor: default;
+}
+.pagination > li > a, .pagination > li > span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    color: #333;
+    background-color: transparent;
+    border: none;
+    margin-left: -1px;
+}
+.page-id-3270 #wrapper {
+    background-image: url(http://simun-emanuel.hr/wp-content/uploads/2015/09/Sky-Blue-Sky-2.jpg);
+    background-color: transparent;
+    background-position: 0 468px;
+    background-size: 100%;
+    color: #FFF!important;
+    background-repeat: no-repeat;
+}
+
+.page-id-3268 #wrapper #page_caption > div.page_title_wrapper.fadeIn {
+    margin-top: 270px!important;
+}
+marquee > a {
+    color: #FFF!important;
+    text-shadow: 1px 1px 1px #333;
+}
+.page-id-3264 #wrapper div div div #page_main_content > div:nth-child(1) > marquee {
+    color: #FFF!important;
+    padding-top: 10px!important;
+    padding-bottom: 10px!important;
+    margin-bottom: -50px!important;
+    background-color: #c31e11!important;
+}
+/* .page-id-3264 #wrapper #page_content_wrapper {
+    margin-top: 18vh !important;
+} */
+
+
+
+.pt-cv-content {
+    font-weight: 600!important;
+    color: #000!important;
+}
+
+#portfolio_filter_wrapper > div > div > div > div.thumb_title > h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+a.opci {
+    color: #FFF!important;
+    font-weight: 600;
+    font-size: 12px;
+    text-decoration: underline;
+}
+.counter_subject {
+    color: #EE2832!important;
+}
+i.fa.fa-smile-o {
+    color: #FBA510!important;
+}
+i.fa.fa-bus {
+    color: #2A4E9A!important;
+}
+i.fa.fa-ticket {
+    color: #AECD47!important;
+}
+i.fa.fa-thumbs-up {
+    color: #E37018!important;
+}
+.post_detail {
+    display: none;
+}
+.tribe-bar-disabled {
+    display: none;
+}
+.cookie-notice-container {
+    padding: 10px;
+    max-width: 1000px;
+    width:100%;
+    background-color: rgba(58,58,58,0.8);
+    margin: 0 auto;
+    display: block;
+}
+div#cookie-notice {
+    background-color: transparent!Important;
+}
+span#cn-notice-text {
+    font-size: 14px;
+    width: 85%;
+    max-width: 1000px;
+    min-width: 360px;
+    display: inline-block;
+    text-align:left;
+}
+
+#page_caption.parallax {
+    background-position:60% top!important;
+}
+
+.ai1ec-event-avatar.timely.timely.alignleft.ai1ec-post_thumbnail.ai1ec-landscape {
+    display: none;
+}
+
+
+div#copyright { float: initial; width: auto; text-align: center; }
+
+/*Media queryes*/
+@media only screen and (min-width: 1377px) {
+    .page-id-3093 #wrapper > .ppb_wrapper { 
+        margin-top: 25vh !important; 
+    }
+}
+
+/* @media only screen and (max-width: 1376px) {
+    .page-id-3093 #wrapper > .ppb_wrapper { 
+        margin-top: 20vh !important; 
+    }
+} */
+
+@media only screen and (min-width:1024px) {
+    #toTop i:before {
+        content: "na vrh";
+        font-size: 16px;
+        font-family: sans-serif;
+    }
+    #toTop {
+        width: 70px!important;
+        opacity: 1!important;
+        padding: 5px 10px 5px 10px!important;
+    }
+    .page-id-3268 #wrapper > div.ppb_wrapper.hasbg.withtopbar > div.one.withsmallpadding.withbg {
+        margin-top: 1%!important;
+    }
+    .page-id-3268 #wrapper #page_caption > div.page_title_wrapper.fadeIn {
+        margin-top: 0!important;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .page-id-3270 #wrapper {
+        background-image: url(https://simun-emanuel.hr/wp-content/uploads/2015/09/Sky-Blue-Sky-2.jpg);
+        background-color: transparent;
+        background-position: 0 468px;
+        background-size: cover!important;
+        color: #FFF!important;
+        background-repeat: no-repeat;
+    }
+    .header_style_wrapper {
+        position: absolute;
+        z-index: 9999;
+    }
+    .one.withsmallpadding {
+        padding: 200px 0px!important;
+    }
+    .page-id-3270 #wrapper #page_content_wrapper   {
+        margin-top: 500px !important;
+    }
+    .logo_wrapper {
+        float: none;
+        display: inline-block;
+        margin: auto;
+        margin: 11px 13% 5px 14%!important;
+    }
+    /* .page-id-3264 #wrapper #page_content_wrapper.fullwidth {
+        margin-top: 390px!important;
+    } */
+    .above_top_bar {
+        display: none;
+    }
+    .tp-caption {
+        display: block!important;
+        max-width: 100vw;
+        word-wrap: break-word;
+        white-space: pre-wrap!important;
+        position: absolute!important;
+        top: 35%!important;
+        font-size: 2.15rem!important;
+        color: #FFF!important;
+        text-shadow:2px 2px 2px #4580AC!important;
+    }
+    .one.ppb_transparent_video_bg {
+        display: none;
+        padding: 0;
+        height: 0!important;
+        max-height: 0!important;
+        visibility: hidden;
+    }
+    .one.withsmallpadding .page_content_wrapper {
+        margin-top: 25px!important;
+    }
+    .p-newsletter {
+        padding: 10px 5px!important;
+        font-weight: 600;
+    }
+    .page-id-3093 #wrapper > .ppb_wrapper {
+        margin-top: 20vh !important;
+    }
+    .page-id-3093 #wrapper > div.ppb_wrapper > div:nth-child(5) > div > div:nth-child(6) {
+        display: none!important;
+    }
+    .footer_bar {
+        background-color: transparent!important;
+        background-image: url(https://simun-emanuel.hr/wp-content/uploads/2015/09/12495-oak-on-dandelion-field-1920x1080-nature-wallpaper-e1441659242648.jpg)!important;
+        background-position: center center;
+        background-size: cover!important;
+        background-repeat: no-repeat;
+    }
+    .page-id-3264 #wrapper #page_content_wrapper {
+        margin-top: 306px!important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .page-id-3264 #wrapper #page_content_wrapper .inner .inner_wrapper #page_main_content {
+        padding-top: 39vh!important;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .page-id-3264 #wrapper #page_content_wrapper .inner .inner_wrapper #page_main_content {
+        padding-top: 5vh !important;
+    }
+}
+/*@media screen and (min-width: 1025px) {
+    .page-id-3264 #wrapper #page_content_wrapper {
+        margin-top: 21vh !important;
+    }
+}*/
+
+.page-id-6373 #wrapper #page_content_wrapper.hasbg.withtopbar {
+    margin-top: 500px !important;
+}
+/* Web Shop Tweaks */
+div.woocommerce-product-gallery.woocommerce-product-gallery--without-images.woocommerce-product-gallery--columns-2.images {
+    width: 45%;
+}
+figure.woocommerce-product-gallery__wrapper {
+    width: 45%;
+}
+.product_meta, .woocommerce-tabs.wc-tabs-wrapper {
+    display: none;
+}
+
+/* .ppb_wrapper.hasbg.withtopbar, #page_content_wrapper.hasbg.withtopbar {
+    margin-top: 96vh !important;
+}
+@media (max-width: 700px) {
+    .ppb_wrapper.hasbg.withtopbar, #page_content_wrapper.hasbg.withtopbar {
+        margin-top: 30vh !important;
+    }
+    #page_caption > div.page_title_wrapper.fadeIn > h1 {
+        margin-top: 0vh !important;
+    }
+    #page_caption.hasbg {
+        height: 36vh !important;
+    }
+} */
+@media (max-width: 1366px) and (min-width: 1024px) {
+.slide-text {
+    margin-top: 17% !important;
+}
+}
+
+@media (min-width: 1500px) {
+    .slide-text {
+    margin-top: 12.5% !important;
+}
+}
