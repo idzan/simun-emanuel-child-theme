@@ -237,7 +237,7 @@ if(is_single())
 				        if(!empty($pp_topbar_contact_url))
 				        {	
 				    ?>
-				        <span><a href="<?php echo $pp_topbar_contact_url; ?>"><i class="fa fa-clock-o"></i><?php _e( ' ', THEMEDOMAIN ); ?></a></span>
+				        <span><i class="fa fa-clock-o"></i> Uto - Sub 9:00 - 18:00 </span>
 				    <?php
 				        }
 				    ?>
