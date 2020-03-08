@@ -577,42 +577,7 @@ if(is_single())
 				?>
 				<!-- End logo -->
 				
-				<?php
-					//Display phone button
-					$pp_phone_button_header = get_option('pp_phone_button_header');
-					if(!empty($pp_phone_button_header))
-					{
-						$pp_phone_button_number = get_option('pp_phone_button_number');
-				?>
-				<a href="tel:<?php echo $pp_phone_button_number; ?>">
-					<div class="header_action">
-						<i class="fa fa-phone"></i><?php echo $pp_phone_button_number; ?>
-					</div>
-				</a>
-				<?php 
-					}
-				?>
 				
-				<?php
-				    //Check if display search in header
-				    $pp_ajax_search_header = get_option('pp_ajax_search_header');
-				    
-				    if(!empty($pp_ajax_search_header))
-				    {
-				?>
-				<form role="search" method="get" name="searchform" id="searchform" action="<?php echo home_url(); ?>/">
-				    <div>
-				    	<label for="s"><?php echo _e( 'To Search, type and hit enter', THEMEDOMAIN ); ?></label>
-				    	<input type="text" value="<?php the_search_query(); ?>" name="s" id="s" autocomplete="off"/>
-				    	<button>
-				        	<i class="fa fa-search"></i>
-				        </button>
-				    </div>
-				    <div id="autocomplete"></div>
-				</form>
-				<?php
-				    }
-				?>
 				
 				
 			    <!-- Begin main nav -->
