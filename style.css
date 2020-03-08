@@ -716,7 +716,7 @@ figure.woocommerce-product-gallery__wrapper {
 }
 @media (max-width: 767px) {
     .slide-text {
-        margin-top: 20% !important;
+        margin-top: 32.5% !important;
     }
 }
 /* New Tweaks */
@@ -755,11 +755,11 @@ figure.woocommerce-product-gallery__wrapper {
 /* Logo Wrapper */
 @media (max-width: 1024px) {
     .logo_wrapper {
-        margin: 11px 35% 5px 35%!important;
+        margin: 0px 35% !important;
     }
 }
 @media (max-width: 767px) {
     .logo_wrapper {
-        margin: 11px 35% 5px 35%!important;
+        margin: 0px 35% !important;
     }
 }
