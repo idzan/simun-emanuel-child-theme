@@ -252,21 +252,7 @@ if(is_single())
 				        }
 				    ?>
 				</div>
-				<?php
-				if (class_exists('Woocommerce')) {
-				    //Check if display cart in header
-			
-				    global $woocommerce;
-				    $cart_url = wc_get_cart_url();
-				    $cart_count = $woocommerce->cart->cart_contents_count;
-				?>
-				<div class="header_cart_wrapper">
-				    <div class="cart_count"><?php echo esc_html($cart_count); ?></div>
-				    <a href="<?php echo esc_url($cart_url); ?>"><i class="fa fa-shopping-cart"></i></a>
-				</div>
-				<?php
-				}
-				?>
+				
 				
 				<div class="loginregister">
 					<p>
