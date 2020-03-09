@@ -747,11 +747,11 @@ figure.woocommerce-product-gallery__wrapper {
     padding-right: 10px;
     border: 1px solid #f9f7fa;
 }
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
     .header_cart_wrapper {
         display: none;
     }
-}
+} */
 /* Logo Wrapper */
 @media (max-width: 1024px) {
     .logo_wrapper {

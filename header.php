@@ -267,16 +267,17 @@ if(is_single())
 				<?php
 				}
 				?>
-				<?php
-				    //Display top social icons
-				    //Check if open link in new window
-					$pp_topbar_social_link_blank = get_option('pp_topbar_social_link_blank');
-				?>
+				
 				<div class="loginregister">
 					<p>
 						<a href="#">Prijava</a> | <a href="#">Registracija</a>
 					</p>
 				</div>
+				<?php
+				    //Display top social icons
+				    //Check if open link in new window
+					$pp_topbar_social_link_blank = get_option('pp_topbar_social_link_blank');
+				?>
 				<div class="social_wrapper">
 				    <ul>
 				    	<?php
@@ -577,6 +578,57 @@ if(is_single())
 				?>
 				<!-- End logo -->
 				
+				<?php
+					//Display phone button
+					$pp_phone_button_header = get_option('pp_phone_button_header');
+					if(!empty($pp_phone_button_header))
+					{
+						$pp_phone_button_number = get_option('pp_phone_button_number');
+				?>
+				<a href="tel:<?php echo $pp_phone_button_number; ?>">
+					<div class="header_action">
+						<i class="fa fa-phone"></i><?php echo $pp_phone_button_number; ?>
+					</div>
+				</a>
+				<?php 
+					}
+				?>
+				
+				<?php
+				    //Check if display search in header
+				    $pp_ajax_search_header = get_option('pp_ajax_search_header');
+				    
+				    if(!empty($pp_ajax_search_header))
+				    {
+				?>
+				<form role="search" method="get" name="searchform" id="searchform" action="<?php echo home_url(); ?>/">
+				    <div>
+				    	<label for="s"><?php echo _e( 'To Search, type and hit enter', THEMEDOMAIN ); ?></label>
+				    	<input type="text" value="<?php the_search_query(); ?>" name="s" id="s" autocomplete="off"/>
+				    	<button>
+				        	<i class="fa fa-search"></i>
+				        </button>
+				    </div>
+				    <div id="autocomplete"></div>
+				</form>
+				<?php
+				    }
+				?>
+				<?php
+				if (class_exists('Woocommerce')) {
+				    //Check if display cart in header
+			
+				    global $woocommerce;
+				    $cart_url = wc_get_cart_url();
+				    $cart_count = $woocommerce->cart->cart_contents_count;
+				?>
+				<div class="header_cart_wrapper">
+				    <div class="cart_count"><?php echo esc_html($cart_count); ?></div>
+				    <a href="<?php echo esc_url($cart_url); ?>"><i class="fa fa-shopping-cart"></i></a>
+				</div>
+				<?php
+				}
+				?>
 				
 				
 				
