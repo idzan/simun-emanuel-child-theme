@@ -752,7 +752,7 @@ figure.woocommerce-product-gallery__wrapper {
         display: none;
     }
 } */
-/* Logo Wrapper */
+/* Logo Wrapper on Mobile */
 @media (max-width: 1024px) {
     .logo_wrapper {
         margin: 0px 35% !important;
