@@ -738,16 +738,16 @@ figure.woocommerce-product-gallery__wrapper {
 }
 .above_top_bar .social_wrapper {
     width: 11.5% !important;
-}
+}*/
 .above_top_bar .loginregister {
-    width: 10%;
+    width: auto;
     float: right;
     line-height: 51px !important;
     padding-left: 10px;
     padding-right: 10px;
     border: 1px solid #f9f7fa;
 }
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
     .header_cart_wrapper {
         display: none;
     }
