@@ -763,3 +763,17 @@ figure.woocommerce-product-gallery__wrapper {
         margin: 0px 35% !important;
     }
 } */
+/* Bus Reservation Module CSS Tweaks */
+.scw_mapping_seat.scw_mapping_seat_icon {
+    display: inline !important;
+}
+.scw_mapping_seat_icon span {
+    color: #000 !important;
+}
+.scw_mapping_row {
+    height: 55px !important;
+}
+.scw_mapping_column {
+    height: 55px !important;
+    line-height: 55px !important;
+}
