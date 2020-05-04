@@ -256,8 +256,11 @@ if(is_single())
 				
 				<div class="loginregister">
 					<p>
-						<a href="#">Prijava</a> | <a href="#">Registracija</a>
+						<a href="/prijava">Prijava</a><!--  | <a href="/registracija">Registracija</a> -->
 					</p>
+				</div>
+				<div class="loginregister">
+					<p><a href="/registracija">Registracija</a></p>
 				</div>
 				<?php
 				    //Display top social icons

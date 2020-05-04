@@ -743,8 +743,7 @@ figure.woocommerce-product-gallery__wrapper {
     width: auto;
     float: right;
     line-height: 51px !important;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 5px;
     border: 1px solid #f9f7fa;
 }
 /* @media (max-width: 767px) {
