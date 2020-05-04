@@ -776,3 +776,23 @@ figure.woocommerce-product-gallery__wrapper {
     height: 55px !important;
     line-height: 55px !important;
 }
+
+@media (max-width: 720px) {
+
+    .scw_mapping_content {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+/*For tests*/
+.scw_options, .scw_schedules, .scw_schedules_special {
+    display: none;
+}
+
+/*Login Register pages tweaks*/
+.page-id-12621 #page_caption, .page-id-12616 #page_caption {
+    display: none;
+}
