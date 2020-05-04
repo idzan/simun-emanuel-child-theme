@@ -763,9 +763,9 @@ figure.woocommerce-product-gallery__wrapper {
     }
 } */
 /* Bus Reservation Module CSS Tweaks */
-.scw_mapping_seat.scw_mapping_seat_icon {
+/* .scw_mapping_seat.scw_mapping_seat_icon {
     display: inline !important;
-}
+} */
 .scw_mapping_seat_icon span {
     color: #000 !important;
 }
@@ -780,15 +780,18 @@ figure.woocommerce-product-gallery__wrapper {
 @media (max-width: 720px) {
 
     .scw_mapping_content {
-        display: flex;
-        flex-direction: column;
+        transform: rotate(90deg);
+    }
+
+    span .scw_mapping_seat {
+        writing-mode: sideways-lr;
     }
 
 }
 
 
 /*For tests*/
-.scw_options, .scw_schedules, .scw_schedules_special {
+.scw_options, .scw_schedules, .scw_schedules_special, .scw_types {
     display: none;
 }
 
