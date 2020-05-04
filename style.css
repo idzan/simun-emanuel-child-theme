@@ -763,34 +763,63 @@ figure.woocommerce-product-gallery__wrapper {
     }
 } */
 /* Bus Reservation Module CSS Tweaks */
+
 /* .scw_mapping_seat.scw_mapping_seat_icon {
     display: inline !important;
 } */
-.scw_mapping_seat_icon span {
+/* .scw_mapping_seat_icon span {
     color: #000 !important;
-}
-.scw_mapping_row {
+} */
+/* .scw_mapping_row {
     height: 55px !important;
-}
-.scw_mapping_column {
+} */
+/* .scw_mapping_column {
     height: 55px !important;
     line-height: 55px !important;
 }
+ */
+@media (max-width: 1024px) {
 
-@media (max-width: 720px) {
-
-    .scw_mapping_content {
+    .scw_mapping {
+        margin-top: 15vh !important;
+        margin-bottom: 5vh;
         transform: rotate(90deg);
     }
+
+    /* .scw_mapping_content {
+        transform: rotate(90deg);
+    } */
 
     span .scw_mapping_seat {
         writing-mode: sideways-lr;
     }
 
+    @supports not (writing-mode: sideways-lr) {
+        span .scw_mapping_seat {
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+            line-height: 1em;
+        }
+    }
+
+    span .scw_mapping_seat.scw_mapping_seat_color {
+        color: black;
+    }
+    
+    .scw_mapping_row {
+        height: 7vh !important;
+    } 
+
+    .scw_mapping_column {
+        height: 45px;
+        width: 20px !important;
+        line-height: initial !important;
+    }
+
 }
 
 
-/*For tests*/
+/*For tests - Bus reservation Plugin*/
 .scw_options, .scw_schedules, .scw_schedules_special, .scw_types {
     display: none;
 }
