@@ -12,6 +12,15 @@ function simun_emanuel_child_enqueue_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'simun_emanuel_child_enqueue_scripts' );
 
+/**
+ *  @snippet     Add custom image sizes for thumbnails
+**/
+
+add_theme_support( 'post-thumbnails' );
+add_image_size('novosti-medium', 1024, 576);
+add_image_size('novosti-hd', 1280, 720);
+add_image_size('novosti-fhd', 1920, 1080);
+
 
 /**
  * @snippet       Add Name & Address Fields to My Account Register Form - WooCommerce
