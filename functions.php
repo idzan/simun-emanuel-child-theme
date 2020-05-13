@@ -14,7 +14,7 @@ add_action( 'wp_enqueue_scripts', 'simun_emanuel_child_enqueue_scripts' );
 
 
 /**
- * @snippet       Add First & Last Name to My Account Register Form - WooCommerce
+ * @snippet       Add Name & Address Fields to My Account Register Form - WooCommerce
 **/
   
 ///////////////////////////////
@@ -41,8 +41,18 @@ function simunemanuel_add_name_woo_account_registration() {
     </p>
 
     <p class="form-row">
+    <label for="reg_billing_postcode"><?php _e( 'Postcode', 'woocommerce' ); ?> <span class="required">*</span></label>
+    <input type="text" class="input-text" name="billing_postcode" id="reg_postcode" value="<?php if ( ! empty( $_POST['billing_postcode'] ) ) esc_attr_e( $_POST['billing_postcode'] ); ?>" />
+    </p>
+
+    <p class="form-row">
     <label for="reg_billing_city"><?php _e( 'City', 'woocommerce' ); ?> <span class="required">*</span></label>
     <input type="text" class="input-text" name="billing_city" id="reg_city" value="<?php if ( ! empty( $_POST['billing_city'] ) ) esc_attr_e( $_POST['billing_city'] ); ?>" />
+    </p>
+
+    <p class="form-row">
+    <label for="reg_billing_country"><?php _e( 'Država', 'woocommerce' ); ?> <span class="required">*</span></label>
+    <input type="text" class="input-text" name="billing_country" id="reg_country" value="<?php if ( ! empty( $_POST['billing_country'] ) ) esc_attr_e( $_POST['billing_country'] ); ?>" />
     </p>
   
     <div class="clear"></div>
@@ -65,8 +75,14 @@ function simunemanuel_validate_name_fields( $errors, $username, $email ) {
     if ( isset( $_POST['billing_address_1'] ) && empty( $_POST['billing_address_1'] ) ) {
         $errors->add( 'billing_address_1_error', __( '<strong>Error</strong>: Address is required!.', 'woocommerce' ) );
     }
+    if ( isset( $_POST['billing_postcode'] ) && empty( $_POST['billing_postcode'] ) ) {
+        $errors->add( 'billing_postcode_error', __( '<strong>Error</strong>: Postcode is required!.', 'woocommerce' ) );
+    }
     if ( isset( $_POST['billing_city'] ) && empty( $_POST['billing_city'] ) ) {
         $errors->add( 'billing_city_error', __( '<strong>Error</strong>: City is required!.', 'woocommerce' ) );
+    }
+    if ( isset( $_POST['billing_country'] ) && empty( $_POST['billing_country'] ) ) {
+        $errors->add( 'billing_country_error', __( '<strong>Error</strong>: Country is required!.', 'woocommerce' ) );
     }
     return $errors;
 }
@@ -89,9 +105,17 @@ function simunemanuel_save_name_fields( $customer_id ) {
         update_user_meta( $customer_id, 'billing_address_1', sanitize_text_field( $_POST['billing_address_1'] ) );
         update_user_meta( $customer_id, 'address_1', sanitize_text_field($_POST['billing_address_1']) );
     }
+    if ( isset( $_POST['billing_postcode'] ) ) {
+        update_user_meta( $customer_id, 'billing_postcode', sanitize_text_field( $_POST['billing_postcode'] ) );
+        update_user_meta( $customer_id, 'postcode', sanitize_text_field($_POST['billing_postcode']) );
+    }
     if ( isset( $_POST['billing_city'] ) ) {
         update_user_meta( $customer_id, 'billing_city', sanitize_text_field( $_POST['billing_city'] ) );
         update_user_meta( $customer_id, 'city', sanitize_text_field($_POST['billing_city']) );
+    }
+    if ( isset( $_POST['billing_country'] ) ) {
+        update_user_meta( $customer_id, 'billing_country', sanitize_text_field( $_POST['billing_country'] ) );
+        update_user_meta( $customer_id, 'country', sanitize_text_field($_POST['billing_country']) );
     }
   
 }
