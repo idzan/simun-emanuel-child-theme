@@ -54,6 +54,11 @@ function simunemanuel_add_name_woo_account_registration() {
     <label for="reg_billing_country"><?php _e( 'Država', 'woocommerce' ); ?> <span class="required">*</span></label>
     <input type="text" class="input-text" name="billing_country" id="reg_country" value="<?php if ( ! empty( $_POST['billing_country'] ) ) esc_attr_e( $_POST['billing_country'] ); ?>" />
     </p>
+
+    <p class="form-row">
+    <label for="reg_billing_phone"><?php _e( 'Broj telefona', 'woocommerce' ); ?> <span class="required">*</span></label>
+    <input type="text" class="input-text" name="billing_phone" id="reg_phone" value="<?php if ( ! empty( $_POST['billing_phone'] ) ) esc_attr_e( $_POST['billing_phone'] ); ?>" />
+    </p>
   
     <div class="clear"></div>
   
@@ -83,6 +88,9 @@ function simunemanuel_validate_name_fields( $errors, $username, $email ) {
     }
     if ( isset( $_POST['billing_country'] ) && empty( $_POST['billing_country'] ) ) {
         $errors->add( 'billing_country_error', __( '<strong>Error</strong>: Country is required!.', 'woocommerce' ) );
+    }
+    if ( isset( $_POST['billing_phone'] ) && empty( $_POST['billing_phone'] ) ) {
+        $errors->add( 'billing_phone_error', __( '<strong>Error</strong>: Phone number is required!.', 'woocommerce' ) );
     }
     return $errors;
 }
@@ -116,6 +124,10 @@ function simunemanuel_save_name_fields( $customer_id ) {
     if ( isset( $_POST['billing_country'] ) ) {
         update_user_meta( $customer_id, 'billing_country', sanitize_text_field( $_POST['billing_country'] ) );
         update_user_meta( $customer_id, 'country', sanitize_text_field($_POST['billing_country']) );
+    }
+    if ( isset( $_POST['billing_phone'] ) ) {
+        update_user_meta( $customer_id, 'billing_phone', sanitize_text_field( $_POST['billing_phone'] ) );
+        update_user_meta( $customer_id, 'phone', sanitize_text_field($_POST['billing_phone']) );
     }
   
 }
