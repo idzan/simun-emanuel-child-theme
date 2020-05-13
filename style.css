@@ -778,7 +778,7 @@ figure.woocommerce-product-gallery__wrapper {
     line-height: 55px !important;
 }
  */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
 
     .scw_mapping {
         margin-top: 15vh !important;
@@ -786,9 +786,9 @@ figure.woocommerce-product-gallery__wrapper {
         transform: rotate(90deg);
     }
 
-    /* .scw_mapping_content {
+    .scw_mapping_content {
         transform: rotate(90deg);
-    } */
+    }
 
     span .scw_mapping_seat {
         writing-mode: sideways-lr;
@@ -816,7 +816,7 @@ figure.woocommerce-product-gallery__wrapper {
         line-height: initial !important;
     }
 
-}
+} */
 
 
 /*For tests - Bus reservation Plugin*/
