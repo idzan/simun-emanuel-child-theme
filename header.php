@@ -253,24 +253,14 @@ if(is_single())
 				    ?>
 				</div>
 				
-				
-				<!-- <div class="loginregister">
-					<p>
-						<a href="/prijava">Prijava</a>
-					</p>
-				</div>
-				<div class="loginregister">
-					<p><a href="/registracija">Registracija</a></p>
-				</div> -->
-
 				<!-- My Account Login Register Forms -->
 				
 				<div class="loginregister">
 					<?php if ( is_user_logged_in() ) { ?>
-						<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('My Account','woothemes'); ?>"><?php _e('My Account','woothemes'); ?></a>
+						<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Moj račun','woothemes'); ?>"><?php _e('Moj račun','woothemes'); ?></a>
 					<?php } 
 					else { ?>
-						<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Login / Register','woothemes'); ?>"><?php _e('Login / Register','woothemes'); ?></a>
+						<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Prijava / Registracija','woothemes'); ?>"><?php _e('Prijava / Registracija','woothemes'); ?></a>
 					<?php } ?>
 				</div>
 
